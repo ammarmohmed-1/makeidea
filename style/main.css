@@ -436,6 +436,7 @@ header .article .heading_MI span {
 .contact-us {
   padding: 10rem 0rem;
   height: 150vh;
+  padding: 5rem 0rem;
 }
 .contact-us .content {
   position: relative;
