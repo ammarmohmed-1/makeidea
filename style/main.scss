@@ -243,8 +243,9 @@
             top: 100%;
         }
     }
-    
-    .infromation{
+}
+// the infromation of contact
+.infromation{
         max-width: 100%;
         height: 200px;
         width: 100%;
@@ -264,9 +265,7 @@
                 }
             }
         }
-    }
 }
-
 // style in footer 
 footer{
     margin: auto 0rem;
@@ -344,10 +343,5 @@ footer{
                 width: 100%;
             }
         }
-    }
-}
-@media screen and (max-width:450px){
-    body{
-        width: 110%;
     }
 }

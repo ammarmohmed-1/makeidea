@@ -539,7 +539,8 @@ header .article .heading_MI span {
   position: fixed;
   top: 100%;
 }
-.contact-us .infromation {
+
+.infromation {
   max-width: 100%;
   height: 200px;
   width: 100%;
@@ -552,10 +553,10 @@ header .article .heading_MI span {
   display: -ms-flexbox;
   display: flex;
 }
-.contact-us .infromation ul li {
+.infromation ul li {
   display: inline;
 }
-.contact-us .infromation ul li a img {
+.infromation ul li a img {
   width: 40px;
   height: auto;
 }
@@ -632,10 +633,5 @@ footer .up-footer .logo img {
   }
   .contact-us .content .text-content {
     width: 100%;
-  }
-}
-@media screen and (max-width: 450px) {
-  body {
-    width: 110%;
   }
 }

@@ -4,73 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png"  href="images/logo/main_logo.png">
+    <link rel="icon" type="image/png" href="images/logo/main_logo.png">
     
     <!-- style css && JS -->
     <link rel="stylesheet" href="style/main.css">
     <script defer src="script/main.js"></script>
-    <!-- animation libbery -->
-    <link rel="stylesheet" href="wow-js/animate.css">
+    <script defer src="script/contact_us.js"></script>
+    <!------------------------------->
+    <!-- tailt libery -->
+    <script src="script/tailt.js"></script>
+    <!-- AOS LIBERY  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- THE TITTLE -->
     <title>MAKE IDEA</title>
 </head>
-<body dir="rtl">
+<body dir="rtl"> 
+    <nav class="nav">
+        <div class="logo">
+            <img style="padding:10px 0rem; width:100px;height:auto;" src="images/logo/main_logo.png" alt="">
+            <div class="bar"><img style="width:40px; height:auto;" src="images/icon/menu.png" alt="botton"></div>
+        </div>
+        <ul>
+            <li><a href="index.html">الصفحة الرئسية</a></li>
+            <li><a href="who-are-we.html">من نحن</a></li>
+            <li><a href="our_service.html">خدماتنا</a></li>
+            <li><a href="contact_with_us.html">تواصل معنا</a></li>
+        </ul>
+    </nav>
     <!-- header -->
     <header>
-        <nav class="nav wow fadeInDown">
-            <div class="logo">
-                <img style="padding:10px 0rem; width:120px;height:auto;" src="images/logo/main_logo.png" alt="">
-                <div class="bar"><img style="width:40px; height:auto;" src="images/icon/menu.png" alt="botton"></div>
-            </div>
-            <ul>
-                <li><a href="index.html">الصفحة الرئسية</a></li>
-                <li><a href="who-are-we.html">من نحن</a></li>
-                <li><a href="our_service.html">خدماتنا</a></li>
-                <li><a href="contact_with_us.html">تواصل معنا</a></li>
-            </ul>
-        </nav>
         <div class="up_header">
             <div class="article">
-                <h1> /.. make idea ../ </h1>
-                <h3>شركة رائدة ومتخصصة فى مجال البرمجيات وتصميم المواقع بكل انواعها</h3>
-                <a style="transition: all 1s ;" href="#who_are_we"><img src="images/icon/scroll-down.png" alt=""></a>
+                <h1 id="make_idea"></h1>
+                <h1 class="heading_MI"> انت لديك الفكرة ونحن علينا</h1>
+                <a style="transition: all 1s;" href="#who_are_we"><img src="images/icon/scroll-down.png" alt=""></a>
             </div>
         </div>
     </header>
 
-    <h1 style="text-align:center; padding-top:10rem ; font-size:2rem;">تواصل معنا</h1>
-    <section class="contact-with-us">
-        <form action="">
-            <div>
-                <input type="text" placeholder="ادخل اسمك">
-            <!-- <div style="display: flex; width: 90%;"> -->
-                <input type="tel" placeholder="ادخل رقم هاتفك" >
-                <input type="email" placeholder="ادخل بريدك الالكترونى">
-                <input type="number" placeholder="ادخل ميزانيتك للمشروع" >
-                <textarea name="1" placeholder="ادخل تفاصيل المشروع وارفق بعض رةابط المواقع التى تتشابه مع فكرتك"></textarea>
-                <!-- <div> -->
-                    <button type="submit" class="btn">ارسال</button>
-                <!-- <input type="submit" class="btn" value="ارسال"> -->
-            </div>
-            
-        </form>
-        <img src="images/contact-us2.png" alt="">
-
-    </section>
-
-    <!-- numbers to contact -->
-    <div class="numbers_to_contact">
-        <a href="https://wa.me/message/4TE6ZJZ54AW6J1" class="whatsapp">
-            <img src="images/icon/whatsapp.png" alt="whatsapp">
-        </a>
-    </div>
     <!-- contact with us -->
-    <section class="contact-us" style="height:20vh">
-        <div class="infromation" style="margin:-12rem 0rem;">
-            <h1 style="text-align:center; margin: 3rem 0rem; font-size: 2.5rem;">معلومات التواصل</h1>
+    <section class="contact-us">
+        <div class="content">
+            <div class="main-img tiled-libery" >
+                <img src="images/contact-us2.png" alt="" data-aos="zoom-in">
+            </div>
+            <div class="text-content">
+                <h1>ارسل لنا رسالة من هنا</h1>
+                <h3>الآن وبكل سهولة فقط اكتب الايميل و رقم الجوال و ارسل لنا استفسارك او طلبك , و سوف يتم الرد عليكم في اقل من 60 دقيقة او تواصل معنا مباشره عبر موقع التواصل الاجتماعي لدينا</h3>
+                <button class="btn start_now"> start now </button>
+            </div>
+            <!-- FROM -->
+            <form action="" class="form form_close">
+                <img class="icon_form" src="images/icon/close.png" alt="">
+                <div class="main-form">
+                    <div>
+                        <h3>inter your full name </h3>
+                        <input type="text" placeholder="inter your full name">
+                    </div>
+                    <div>
+                        <h3>inter your full name </h3>
+                        <input type="text" placeholder="inter your full name">
+                    </div>
+                </div>
+
+                <div>
+                    <h1>inter yout email address</h1>
+                    <input type="text" placeholder="">
+                </div>
+                <div>
+                    <textarea name="" id="" rows="5"></textarea>
+                    <button class="btn" type="submit">send</button>
+                </div>
+            </form>
+        </div>
+        <!-- the infromation contact -->
+        <div class="infromation" dir="ltr">
+            <!-- <h1 style="text-align:center; margin: 2rem 0rem ;">معلومات التواصل</h1> -->
             <ul>
                 <li><a href="mailto:make00idea@gamil.com"><img src="images/icon/gmail.png" alt="gmail"></a></li>
                 <li><a href="tel:+201558891042"><img src="images/icon/phone.png" alt="phone"></a></li>
-                <li><a href="https://www.linkedin.com/in/make-idea-7b686a264/"><img src="images/icon/linkedin.png" alt="linked-in"></a></li>
+                <!-- <li><a href="https://www.linkedin.com/in/make-idea-7b686a264/"><img src="images/icon/linkedin.png" alt="linked-in"></a></li> -->
                 <li><a href="https://www.facebook.com/profile.php?id=100089985401535&mibextid=ZbWKwL"><img src="images/icon/facebook.png" alt=""></a></li>
                 <li><a href="https://line.me/ti/p/XaoXOkSfN7"><img src="images/icon/line.png" alt=""></a></li>
             </ul>
@@ -79,27 +93,53 @@
     <!-- footer -->
     <footer>
         <div class="up-footer">
-            <div class="logo wow slideInRight" data-wow-delay="1.4s" >
+            <div class="logo" >
                 <img src="images/logo/main_logo.png" alt="logo" >
             </div>
-            <div class="article wow slideInRight" data-wow-delay="1.8s" >
-                <h1>make idea</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quam maiores non ratione ullam dolorum mollitia deleniti maxime, corrupti, asperiores quae rem, consequatur itaque commodi! Quibusdam iure quisquam at consequuntur!</p>
+            <div class="article" >
+                <h1>MAKE IDEA</h1>
+                <p>في شركة MAKE IDEA  ، نلزم أنفسنا بمعايير عالية من الجودة والحرفية في تصميم الويب ، مما يؤدي إلى حلول لها صدى لدى الجماهير. ولكن نجاحنا ببساطة عن طريق اتقان عملنا وتحقيق أهداف العملاء, أيضا من خلال الخبرة والعمل الجماعي، وتطوير ذاتي على طول الطريق . نحن دائما نسأل أنفسنا كيف يمكننا أن نجعل شبكة الانترنت مكان أفضل</p>
             </div>
-            <div class="menu wow slideInRight" data-wow-delay="2.2s">
+            <div class="menu ">
                 <ul>
                     <li><a href="index.html">الصفحة الرئسية</a></li>
                     <li><a href="who-are-we.html">من نحن</a></li>
                     <li><a href="our_service.html">خدماتنا</a></li>
-                    <li><a href="desing_stage.html">تواصل معنا</a></li>
-                    <li><a href="price.html">طلب عرض السعر</a></li>
+                    <li><a href="contact_with_us.html">تواصل معنا</a></li>
                 </ul>
             </div>
         </div>
+            
     </footer>
-</body>
-<script src="wow-js/wow.min.js"></script>
-    <script>
-        new WOW().init();
+    
+    <!-- numbers to contact -->
+    <div class="numbers_to_contact">
+        <a href="https://wa.me/message/4TE6ZJZ54AW6J1" class="whatsapp">
+            <img src="images/icon/whatsapp.png" alt="whatsapp">
+        </a>
+    </div>
+
+
+    <!-- liberys -->
+    <!--  this is vanilla tilt.js -->
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".tiled-libery"), {
+            max: 25,
+            speed: 400
+        });
+	
+        //It also supports NodeList
+        VanillaTilt.init(document.querySelectorAll(".tiled-libery"));
     </script>
+
+<!-- AOS liberys -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration:800,
+    })
+</script>
+
+</body>
 </html>
