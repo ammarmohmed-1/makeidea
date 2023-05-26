@@ -10,8 +10,6 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-
-    min-height: 100vh;
     
     .up{
         display: flex;
@@ -134,9 +132,16 @@
                 height: auto;
                 background-color: #5B8FB9;
                 padding: .9rem;
+                h2{
+                    color: #201d1d;
+                }
                 &:hover{
-                    background-color: #03001C;
+                    background-color: #050125;
                     box-shadow:5px 10px 15px #301E67;
+                    transition: all .5s ;
+                    h2{
+                        color: #8bcbff;
+                    }
                 }
                 img{
                     margin-top:-50px;
@@ -147,68 +152,70 @@
         }
     }
 }
+
+// style in contact us 
 .contact-us{
-    // background-color: #25292d;
     padding:10rem 0rem;
-    height: 180vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 150vh;
     
     .content{
         position: relative; 
-        background-color: #385f84;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        flex-direction: row-reverse;
-        width: 85%;
-        height: 80vh;
+        background-color:#385f84;
         border-radius: 25px;
-        padding: 0rem 2rem;
+        padding: 3rem 2rem;
+        width: 85%; height:auto;
+        min-height: 50vh;
         margin: auto;
-        img{
-            position: absolute;
-            left: -65px;
-            bottom: 50%;
-            max-width: 80%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        .main-img{
+            width: 50%;
+            height: auto;
+            img{
+                width: 100%;
+                height: auto;
+            }
         }
-        .main-content{
-            max-width: 50%;
-            position: absolute;
-            right: 5%;
+        .text-content{
+            width: 50%;
+            h1{
+                font-size: 2rem;
+                margin: 1.5rem 0rem;
+                color: #FF9100;
+            }
         }
 
         // style the form
         .form{
             transition: all 1s ease-in-out;
-            background-color: #385f84;
-            border: 1px solid #FF9100;
+            background-color: #25496b;
             z-index: 999;
             display: flex;
             flex-direction: column;
             border-radius: 25px;
-            margin: auto;
-            padding: 3rem ;
-            width: 80%;  height: 90vh;
+            // margin: auto;
+            padding: 1rem ;
+            width: 90%;  height: auto;
             overflow:auto;
             position: fixed;
-            top: 4%;
+            top: 5%;
+            right: 5%;
             .icon_form{
                 position: absolute;
                 top: 2rem;
-                left: 2rem;
+                left: 1rem;
                 cursor: pointer;
-                width: 20px; height: auto;
+                width: 30px; height: auto;
             }
             input,textarea{
                 outline: none;
                 border: none;
                 color: #000;
                 font-weight: 700;
-                font-size: 1.1em;
+                font-size: 1em;
                 border-radius: 5px;
-                padding: .6rem;
+                padding: .2rem;
                 margin: 1rem 0rem;
                 width: 95%;
             }
@@ -234,18 +241,17 @@
     }
     
     .infromation{
-        max-width: 90%;
+        max-width: 100%;
         height: 200px;
-        position: relative;
         width: 100%; 
+        position: fixed;
+        float: right;
+        top: 30%;  left: 1%;
+        z-index: 20;
         ul{
-            position: absolute;
-            width: 100%; 
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            width: 100%;
+            display: inline-block;
             li{
-                margin-left: 100px;
                 a{
                     img{
                         width: 40px;
@@ -257,14 +263,22 @@
     }
 }
 
+// style in footer 
 footer{
     margin: auto 0rem;
     background-color: #0c0a11c5;
-    
+    padding: .9rem;
+    // text-align: center;
     .up-footer{
-        min-height: 60vh;
+        height: 60vh;
         @include grid(15rem);
         align-items: center;
+        .article{
+            max-width: 90%;
+            h1{
+                padding:1rem 0rem;
+            }
+        }
         .menu{
             li{
                 margin: .4rem 0rem;
@@ -272,7 +286,7 @@ footer{
         }
         .logo{
             img{
-                width: 200px;
+                width: 180px;
                 height: auto;
             }
         }
@@ -284,86 +298,47 @@ footer{
     bottom:50px;
     left: 50px;
     a{
-        background-color: #ff9100;
-        padding: .6rem;
+        background-color: #0dce17;
+        padding: .5rem;
         display: flex;
         align-items: center;
         border-radius: 15px;
         img{
-            width: 40px;
+            width: 30px;
             height: auto;
         }
     }
 }
 
 
-// responsve desing
+// responsve design
 @media screen and (max-width: 903px){
-        nav{
-            .logo{
-                .bar{
-                    display: block;
-                    float: right;
-                }
-            }
-            ul{
-                opacity: 0;
-                overflow: hidden;
-                background-color: #301E67;
-                width: 100%;
-                height: 0;
-                display: flex;
-                justify-content: space-around;
-                position: absolute;
-                flex-direction: column;
-                align-items: center;
-                margin-top: 60px;
-                padding: 1rem;
-                z-index: 999;
-                li{
-                    margin:1rem 0rem;
-                }  
-            }
-        }
-        .navbar{
-            display: flex;
-            align-items: center;
-            ul{
-                opacity: 1;
-                background-color: #301E67;
-                width: 100%;
-                height: auto;
-                display: flex;
-                justify-content: space-around;
-                position: absolute;
-                flex-direction: column;
-                align-items: center;
-                margin-top: 460px;
-                padding: 1rem;
-                z-index: 999;
-                li{
-                    margin:1rem 0rem;
-                }  
-            }
-        }
-        .up_header{
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            flex-direction: column;
-            text-align: center;
-            flex-wrap: wrap;
-            height: 100vh;
-            width: 90%;
-            margin: auto;
-        }
-    }
-
-@media screen and (max-width:760px){
-    .who_are_we{        
+    // responsve design in who are we
+    .who_are_we{
         .article{
             width: 90%;
             text-align: center;
+        }
+        .up{
+            img{
+                width: 90%;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:760px){
+    // responsive design in contact us
+    .contact-us{
+        .content{
+            flex-direction: column;
+            .main-img{
+                width: 100%;
+            }
+            .text-content{
+                width: 100%;
+            }
         }
     }
 }

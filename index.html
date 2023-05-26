@@ -15,14 +15,13 @@
     <!-- AOS LIBERY  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
-    
     <!-- THE TITTLE -->
     <title>MAKE IDEA</title>
 </head>
 <body dir="rtl"> 
-    <nav class="nav" data-aos="fade-down" >
+    <nav class="nav" >
         <div class="logo">
-            <img style="padding:10px 0rem; width:120px;height:auto;" src="images/logo/main_logo.png" alt="">
+            <img style="padding:10px 0rem; width:100px;height:auto;" src="images/logo/main_logo.png" alt="">
             <div class="bar"><img style="width:40px; height:auto;" src="images/icon/menu.png" alt="botton"></div>
         </div>
         <ul>
@@ -36,9 +35,9 @@
     <header>
         <div class="up_header">
             <div class="article">
-                <h1> /.. make idea ../ </h1>
-                <h3>شركة رائدة ومتخصصة فى مجال البرمجيات وتصميم المواقع بكل انواعها</h3>
-                <a style="transition: all 1s ;" href="#who_are_we"><img src="images/icon/scroll-down.png" alt=""></a>
+                <h1 id="make_idea"></h1>
+                <h1 class="heading_MI"> انت لديك الفكرة ونحن علينا</h1>
+                <a style="transition: all 1s;" href="#who_are_we"><img src="images/icon/scroll-down.png" alt=""></a>
             </div>
         </div>
     </header>
@@ -70,34 +69,46 @@
         <div class="up_service">
             <!-- one -->
             <div class="card"  data-aos="fade-up">
-                <img src="images/icon/web-development.png" alt="icon" class="icon">
+                <img src="images/icon/uiux.png" alt="" class="icon">
                 <div class="art">
-                    <h1>تصميم UI/UX</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <h1>تصميم تجربة المستخدم UI</h1>
+                    <p>عزز نجاح عملك من خلال خدمات تصميم UI / UX المتطورة لدينا. نحن نتفهم الدور الحيوي لتجربة المستخدم في زيادة رضا العملاء وولائهم. يصمم فريق الخبراء لدينا واجهات بديهية وآسرة بصريًا ، مما يضمن تفاعلات سلسة لعملائك. سمعة العلامة التجارية وتعظيم مشاركة العملاء من خلال حلولنا المصممة لواجهة المستخدم / تجربة المستخدم</p>
                 </div>
             </div>
+            
             <!-- two -->
+            <div class="card"  data-aos="fade-up">
+                <img src="images/icon/web-development.png" alt="icon" class="icon">
+                <div class="art">
+                    <h1>البرمجة الخاصة </h1>
+                    <p>أطلق العنان لقوة حلول تصميم الويب المصممة خصيصًا من خلال خبرتنا في البرمجة الخاصة. تُحدث مواقعنا الإلكترونية المصممة خصيصًا ثورة في تواجدك عبر الإنترنت ، مما يؤدي إلى زيادة مشاركة المستخدمين ومعدلات التحويل. ارفع عملتك التجارية من خلال تسخير إمكانات البرمجة المتخصصة لإنشاء موقع ويب تبرز من المنافسة </p>
+                </div>
+            </div>
+            
+            <!-- three -->
             <div class="card"  data-aos="fade-up">
                 <img src="images/icon/wordpress.png" alt="icon" class="icon">
                 <div class="art">
-                    <h1>تصميم UI/UX</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <h1>محتوى سهل الإدارة</h1>
+                    <p>نقوم بتطوير مواقع باستخدام وردبرس بحيث يمكنك إضافة المحتوى لموقعك وتحريرة وحذفة بشكل احترافى وسريع</p>
                 </div>
             </div>
-            <!-- three -->
-            <div class="card"  data-aos="fade-up">
-                <img src="images/icon/logo-design.png" alt="" class="icon">
-                <div class="art">
-                    <h1>تصميم UI/UX</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
-                </div>
-            </div>
+            
             <!-- four -->
             <div class="card" data-aos="fade-up">
                 <img src="images/icon/seo.png" alt="" class="icon">
                 <div class="art">
-                    <h1>تصميم UI/UX</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <h1> تهيئة محركات البحث </h1>
+                    <p>نتبع المعايير القياسية لجوجل لإجراء اعدادات تحسين محركات البحث لموقعك حتى تتمكن من تحسينه لمحركات البحث و الظهور في المراتب الاولى لجوجل</p>
+                </div>
+            </div>
+            <!-- six -->
+            <div class="card" data-aos="fade-up">
+                <img src="images/icon/logo.png" alt="" class="icon">
+                <div class="art">
+                    <h1>تصميم هوية تجارية </h1>
+                    <p>عندما ي التعلق الأمر بالأنشطة التجارية، فإن ما تراه هو ما تحصل عليه، فإنك تتحكم في كيفية إدراك عملائك لعلامتك التجارية، وكذلك تبتكر الانطباع الاول المذهل الذي ترغب في إيصاله إليهم .  وذلك ما سيشعر به عملاءك المحتملون ، وأيضا أول ما يراه عملاءك دائمًا هو تصميم الهوية الخاص بك. 
+                    </p>
                 </div>
             </div>
         </div>
@@ -135,19 +146,22 @@
             <div class="up-cards">
                 <div class="card" data-aos="fade-up">
                     <img src="images/icon/reliability.png" alt="haker">
-                    <h2>ammar mohmed</h2>
+                    <h2>التزام بالمواعيد</h2>
                     <p>مثلما يحب صاحب الموقع الالكتروني أن يحصل على تصميم إبداعي يساعده على نجاح أعماله وانتشارها ، فإنه يحب أيضًا أن يتسلم الموقع الالكتروني في المواعيد التي تم الاتفاق عليها دون أي تأخير أو تعطيل، وهذا ما نفي به في شركة MAKE IDEA ، دقة المواعيد التي نلتزم بها تجعلنا نقوم بتسليم جميع الأعمال قبل الموعد المتفق عليه.</p>
                 </div>
                 <div class="card"  data-aos="fade-up">
-                    <img src="images/icon/ssl-certificate.png" alt="ssl">
+                    <img src="images/icon/ssl.png" alt="ssl">
+                    <h2>ضمان حماية موقعك</h2>
                     <p>إن عملية تأمين الموقع الإلكتروني لا تقل أهمية عن جمال التصميم الإبداعي أو جودة تجربة المستخدم التي يقدمها، لذلك نحن نضع معيار الأمان دائمًا ذا أولوية قصوى من خلال تركيب الجدران النارية وحماية الاستضافة وتأمين عملية نقل البيانات اللازمة في المواقع التي تقبل الدفع الإلكتروني وتركيب شهادة الأمان SSL وغير ذلك من متطلبات الحماية. </p>
                 </div>
                 <div class="card"  data-aos="fade-up">
                     <img src="images/icon/money.png" alt="desing-thinking">
+                    <h2>ضمان استرداد الاموال</h2>
                     <p>ابدأ في تصميم موقعك الالكتروني مع شركة MAKE IDEA دون أي قلق أو خوف، لأننا نضمن جودة الخدمات التي تقدمها وتحقيق الرضاء الكامل للعملاء الذين نفتخر بهم، فقد وضعنا ضمان كامل للعميل لاستعادة الأموال التي دفعها خلال 10 ايام وذلك إذا لم يجد الخدمة التي تم الاتفاق عليها بالتفصيل، هذا الأمر يساعدنا في كسب ثقة المزيد من العملاء.</p>
                 </div>
                 <div class="card"  data-aos="fade-up">
                     <img src="images/icon/technical-support.png" alt="technical-support">
+                    <h2>دعم سريع وفعال</h2>
                     <p>في شركة البرمجيات الخاصة بنا ، نفخر بأنفسنا لتقديم خدمة ودعم عملاء استثنائيين. نحن ملتزمون بضمان رضا عملائنا بنسبة 100٪ عن العمل الذي نقوم به ، ونذهب إلى أبعد الحدود لضمان أن يكون موقع الويب الخاص بك في أفضل حالاته. </p>
                 </div>
             </div>
@@ -156,23 +170,26 @@
     <!-- contact with us -->
     <section class="contact-us">
         <div class="content">
-            <img src="images/programing.png" alt="" class="main-img tiled-libery"  data-aos="zoom-in">
-            <div class="main-content">
-                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, harum in. Expedita.</h4>
-                <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis assumenda ut aspernatur, doloremque autem facilis debitis dignissimos possimus laudantium corrupti dolores, beatae rerum non veritat</h5>
-                <button class="btn start_now">start now </button>
-                
+            <div class="main-img tiled-libery" >
+                <img src="images/cc.png" alt="" data-aos="zoom-in">
             </div>
+            <div class="text-content">
+                <h1>ارسل لنا رسالة من هنا</h1>
+                <h3>الآن وبكل سهولة فقط اكتب الايميل و رقم الجوال و ارسل لنا استفسارك او طلبك , و سوف يتم الرد عليكم في اقل من 60 دقيقة او تواصل معنا مباشره عبر موقع التواصل الاجتماعي لدينا</h3>
+                <button class="btn start_now">start now </button>
+            </div>
+            <!-- <div class="up_content">
+            </div> -->
             <!-- FROM -->
             <form action="" class="form form_close">
-                <img class="icon_form" src="images/icon/cross.png" alt="">
+                <img class="icon_form" src="images/icon/close.png" alt="">
                 <div class="main-form">
                     <div>
-                        <h1>inter your full name </h1>
+                        <h3>inter your full name </h3>
                         <input type="text" placeholder="inter your full name">
                     </div>
                     <div>
-                        <h1>inter your full name </h1>
+                        <h3>inter your full name </h3>
                         <input type="text" placeholder="inter your full name">
                     </div>
                 </div>
@@ -187,26 +204,27 @@
                 </div>
             </form>
         </div>
-        <div class="infromation">
-            <h1 style="text-align:center; margin: 2rem 0rem ;">معلومات التواصل</h1>
+        <!-- the infromation contact -->
+        <div class="infromation" dir="ltr">
+            <!-- <h1 style="text-align:center; margin: 2rem 0rem ;">معلومات التواصل</h1> -->
             <ul>
                 <li><a href="mailto:make00idea@gamil.com"><img src="images/icon/gmail.png" alt="gmail"></a></li>
                 <li><a href="tel:+201558891042"><img src="images/icon/phone.png" alt="phone"></a></li>
-                <li><a href="https://www.linkedin.com/in/make-idea-7b686a264/"><img src="images/icon/linkedin.png" alt="linked-in"></a></li>
+                <!-- <li><a href="https://www.linkedin.com/in/make-idea-7b686a264/"><img src="images/icon/linkedin.png" alt="linked-in"></a></li> -->
                 <li><a href="https://www.facebook.com/profile.php?id=100089985401535&mibextid=ZbWKwL"><img src="images/icon/facebook.png" alt=""></a></li>
                 <li><a href="https://line.me/ti/p/XaoXOkSfN7"><img src="images/icon/line.png" alt=""></a></li>
             </ul>
         </div>
     </section>
     <!-- footer -->
-    <footer  data-aos="zoom-out">
+    <footer>
         <div class="up-footer">
             <div class="logo" >
                 <img src="images/logo/main_logo.png" alt="logo" >
             </div>
             <div class="article" >
-                <h1>make idea</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quam maiores non ratione ullam dolorum mollitia deleniti maxime, corrupti, asperiores quae rem, consequatur itaque commodi! Quibusdam iure quisquam at consequuntur!</p>
+                <h1>MAKE IDEA</h1>
+                <p>في شركة MAKE IDEA  ، نلزم أنفسنا بمعايير عالية من الجودة والحرفية في تصميم الويب ، مما يؤدي إلى حلول لها صدى لدى الجماهير. ولكن نجاحنا ببساطة عن طريق اتقان عملنا وتحقيق أهداف العملاء, أيضا من خلال الخبرة والعمل الجماعي، وتطوير ذاتي على طول الطريق . نحن دائما نسأل أنفسنا كيف يمكننا أن نجعل شبكة الانترنت مكان أفضل</p>
             </div>
             <div class="menu ">
                 <ul>
@@ -226,7 +244,6 @@
             <img src="images/icon/whatsapp.png" alt="whatsapp">
         </a>
     </div>
-
 
 
     <!-- liberys -->
