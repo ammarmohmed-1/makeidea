@@ -36,7 +36,6 @@ window.onscroll = ()=>{
   nav.classList.remove("navbar");
   bar.innerHTML = botton[1];
   form.classList.add("form_close");
-
 }
 
 // make a auto typing
