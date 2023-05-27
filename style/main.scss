@@ -41,7 +41,10 @@
     background-size: cover;
 
     .up_service{
-        @include grid(25rem);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3rem;
         text-align: center;
         margin: auto;
         padding: 2rem 0rem;
@@ -52,9 +55,7 @@
             margin: auto;
             padding:0.5rem;
             border-radius: 25px;
-            width: 80%;
-            // min-width: 270px;
-            // width: 220px;
+            width: 40%;
             height:auto;
             box-shadow:10px 10px 10px #301E67;
             &:hover{
@@ -74,22 +75,23 @@
         }
     }
 }
-
+// style in design stage
 .desing_stage{
     .up_article{
-        @include grid(25rem);
-        
+        display: flex;
+        justify-content: center;
         width: 100%;
+        margin: auto;
         align-items: center;
         .main-img{
-            border-radius: 55px;
-            padding: 2rem;
-            max-width: 90%;
+            border-radius: 35px;
+            width: 40%;
         }
         .up-card{
             display:flex;
-            
             flex-direction: column;
+            // width: 80%;
+            // border: #0dce17 3px solid;
             .card{
                 margin: 1rem;
                 display: flex;
@@ -111,14 +113,16 @@
         }
     }
     
+    // why we
     .up-two{
         h1{
             text-align: center;
             padding: 2rem 0rem;
             font-size: 2rem;
         }
+
         .up-cards{
-            width: 90%;
+            width: 100%;
             min-height: 60vh;
             align-items:center;
             margin: auto;
@@ -127,14 +131,13 @@
             .card{
                 display: flex;
                 text-align: right;
+                background-color: #5B8FB9;
                 flex-direction: column;
                 padding:1rem 0rem;
                 margin:2rem auto;
                 border-radius: 5px;
-                min-width: 260px;
-                max-width: 50%;
+                width: 245px;
                 height: auto;
-                background-color: #5B8FB9;
                 padding: .9rem;
                 h2{
                     color: #201d1d;
@@ -198,7 +201,6 @@
             display: flex;
             flex-direction: column;
             border-radius: 25px;
-            // margin: auto;
             padding: 1rem ;
             width: 90%;  height: auto;
             overflow:auto;
@@ -235,7 +237,6 @@
                     width: 50%;
                 }
             }
-            
         }
         .form_close{
             translate: all 1s ease-in-out;
@@ -332,6 +333,71 @@ footer{
 }
 
 @media screen and (max-width:760px){
+    // responsve design in our service
+    .our_service{
+        .up_service{
+            .card{
+                width: 90%;
+            }
+        }
+    }
+    // style in design stage
+    .desing_stage{
+        .up_article{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            .main-img{
+                width: 90%;
+            }
+            .up-card{
+                .card{
+                    width: 90%;
+                }
+            }
+        }
+        
+        // why we
+        .up-two{
+            h1{
+                text-align: center;
+                padding: 2rem 0rem;
+                font-size: 2rem;
+            }
+
+            .up-cards{
+                .card{
+                    display: flex;
+                    text-align: right;
+                    background-color: #5B8FB9;
+                    flex-direction: column;
+                    padding:1rem 0rem;
+                    margin:2rem auto;
+                    border-radius: 5px;
+                    width: 245px;
+                    height: auto;
+                    padding: .9rem;
+                    h2{
+                        color: #201d1d;
+                    }
+                    &:hover{
+                        background-color: #050125;
+                        box-shadow:5px 10px 15px #301E67;
+                        transition: all .5s ;
+                        h2{
+                            color: #8bcbff;
+                        }
+                    }
+                    img{
+                        margin-top:-50px;
+                        width: 90px;
+                        height: 90px;
+                    }
+                }
+            }
+        }
+    }
+
     // responsive design in contact us
     .contact-us{
         .content{

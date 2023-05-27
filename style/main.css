@@ -15,6 +15,7 @@
 
 body {
   background-color: #03001C;
+  overflow-x: hidden;
 }
 
 .btn {
@@ -295,10 +296,16 @@ header .article .heading_MI span {
   background-size: cover;
 }
 .our_service .up_service {
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 3rem;
   text-align: center;
   margin: auto;
   padding: 2rem 0rem;
@@ -314,7 +321,7 @@ header .article .heading_MI span {
   margin: auto;
   padding: 0.5rem;
   border-radius: 25px;
-  width: 80%;
+  width: 40%;
   height: auto;
   -webkit-box-shadow: 10px 10px 10px #301E67;
           box-shadow: 10px 10px 10px #301E67;
@@ -336,19 +343,21 @@ header .article .heading_MI span {
 }
 
 .desing_stage .up_article {
-  display: -ms-grid;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
+  margin: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 .desing_stage .up_article .main-img {
-  border-radius: 55px;
-  padding: 2rem;
-  max-width: 90%;
+  border-radius: 35px;
+  width: 40%;
 }
 .desing_stage .up_article .up-card {
   display: -webkit-box;
@@ -387,7 +396,7 @@ header .article .heading_MI span {
   font-size: 2rem;
 }
 .desing_stage .up-two .up-cards {
-  width: 90%;
+  width: 100%;
   min-height: 60vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -404,6 +413,7 @@ header .article .heading_MI span {
   display: -ms-flexbox;
   display: flex;
   text-align: right;
+  background-color: #5B8FB9;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -411,10 +421,8 @@ header .article .heading_MI span {
   padding: 1rem 0rem;
   margin: 2rem auto;
   border-radius: 5px;
-  min-width: 260px;
-  max-width: 50%;
+  width: 245px;
   height: auto;
-  background-color: #5B8FB9;
   padding: 0.9rem;
 }
 .desing_stage .up-two .up-cards .card h2 {
@@ -622,6 +630,67 @@ footer .up-footer .logo img {
   }
 }
 @media screen and (max-width: 760px) {
+  .our_service .up_service .card {
+    width: 90%;
+  }
+  .desing_stage .up_article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .desing_stage .up_article .main-img {
+    width: 90%;
+  }
+  .desing_stage .up_article .up-card .card {
+    width: 90%;
+  }
+  .desing_stage .up-two h1 {
+    text-align: center;
+    padding: 2rem 0rem;
+    font-size: 2rem;
+  }
+  .desing_stage .up-two .up-cards .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: right;
+    background-color: #5B8FB9;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem 0rem;
+    margin: 2rem auto;
+    border-radius: 5px;
+    width: 245px;
+    height: auto;
+    padding: 0.9rem;
+  }
+  .desing_stage .up-two .up-cards .card h2 {
+    color: #201d1d;
+  }
+  .desing_stage .up-two .up-cards .card:hover {
+    background-color: #050125;
+    -webkit-box-shadow: 5px 10px 15px #301E67;
+            box-shadow: 5px 10px 15px #301E67;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .desing_stage .up-two .up-cards .card:hover h2 {
+    color: #8bcbff;
+  }
+  .desing_stage .up-two .up-cards .card img {
+    margin-top: -50px;
+    width: 90px;
+    height: 90px;
+  }
   .contact-us .content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

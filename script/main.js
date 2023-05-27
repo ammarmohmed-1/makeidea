@@ -15,10 +15,7 @@ bar.addEventListener("click",()=>{
   nav.classList.toggle("navbar");
 })
 
-window.onscroll = ()=>{
-  nav.classList.remove("navbar");
-  bar.innerHTML = botton[1];
-}
+
 
 // make a auto typing
 
@@ -46,3 +43,9 @@ const heading_MII = () => {
   }
 }
 setInterval(heading_MII , 2000);
+
+
+window.onscroll = ()=>{
+  nav.classList.remove("navbar");
+  bar.innerHTML = botton[1];
+}
