@@ -15,6 +15,8 @@
 
 body {
   background-color: #03001C;
+  max-width: 1440px;
+  margin: auto;
   overflow-x: hidden;
 }
 
@@ -120,9 +122,9 @@ nav .logo .bar:active {
 }
 
 header {
-  min-height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(hsla(246deg, 100%, 5%, 0.4))), url("../images/12.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), hsla(246deg, 100%, 5%, 0.4)), url("../images/12.jpg");
+  height: 90vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(hsla(246, 100%, 5%, 0.4))), url("../images/12.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), hsla(246, 100%, 5%, 0.4)), url("../images/12.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -357,7 +359,7 @@ header .article .heading_MI span {
 }
 .desing_stage .up_article .main-img {
   border-radius: 35px;
-  width: 40%;
+  width: 100%;
 }
 .desing_stage .up_article .up-card {
   display: -webkit-box;
@@ -702,5 +704,25 @@ footer .up-footer .logo img {
   }
   .contact-us .content .text-content {
     width: 100%;
+  }
+  .contact-us .form input, .contact-us .form textarea {
+    font-size: 0.7em;
+  }
+  .contact-us .form .btn {
+    margin-top: -20px;
+  }
+  .contact-us .form .main-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-us .form .main-form input, .contact-us .form .main-form h3 {
+    width: 195%;
   }
 }
